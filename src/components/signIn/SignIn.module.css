@@ -1,0 +1,170 @@
+
+
+.block {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    height: 100vh;
+    grid-template-rows: repeat(1, 100%);
+    align-items: center;
+    overflow: hidden;
+}
+
+.leftBlock {
+    height: 100vh;
+    padding: 24px 64px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.leftWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: inline-block;
+    width: 130px;
+    height: 64px;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leftInfo {
+    min-height: 45px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.personImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
+.leftCompany {
+    font-style: 16px;
+    color: #fff;
+}
+
+.leftContent {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+}
+
+.leftInfo {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+}
+
+.personInitials {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+}
+
+.personPost {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.802);
+} 
+
+
+.leftText {
+    font-size: 17px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.logo {
+    background-image: url('./../../assets/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.rightBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.rightTitle  {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.rightDescr {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    color:#6c757d;
+    margin-bottom: 35px;
+}
+
+.nameInput, .passwordInput {
+    margin-bottom: 15px;
+}
+
+.link {
+    width:100%;
+    display:inline-block;
+}
+
+.rightAdditional {
+    margin: 10px 0 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.signUpBlock {
+    margin-top:20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.btnBlock {
+    width:100%;
+}
+
+.btnBlock a {
+    display:block;
+    width:100%;
+}
+
+.btnBlock a button {
+    pointer-events: none;
+}

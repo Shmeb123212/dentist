@@ -1,0 +1,38 @@
+
+
+.block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #545454;
+    margin-bottom: 10px;
+}
+
+.input {
+    display: inline-flex;
+    justify-content: center;align-items: center;
+    padding: 0 12px;
+    height: 44px;
+    outline: 1px solid #adb5bd8b;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+    transition: all .15s;
+}
+
+.input:focus, .input:active {
+    outline: 2px solid #00b4d8;
+
+}
+
+.input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+}

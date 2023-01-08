@@ -1,0 +1,42 @@
+
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.checkbox {
+    position: absolute;
+    width:20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.inputOver {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:20px;
+    height: 20px;
+    border: 1px solid #84d2f6;
+    border-radius: 3px;
+    background-color: #fff;
+    transition:all ease-in-out .35s;
+    
+}
+.inputOver svg {
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+.checkbox:checked ~ .inputOver svg {
+    opacity: 1;
+}
