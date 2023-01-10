@@ -151,6 +151,9 @@
 }
 
 .signUpBlock {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
     margin-top:20px;
     font-size: 14px;
     color: #6c757d;
@@ -167,4 +170,42 @@
 
 .btnBlock a button {
     pointer-events: none;
+}
+
+.signUpVisible {
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+.signUpHidden {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 100%;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all .3s ease-in-out;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.signUpBlock a {
+    cursor: pointer;
+}
+
+.signUpBlock:hover .signUpVisible {
+    transform: translateY(-15px);
+    opacity: 0;
+}
+
+.signUpBlock:hover .signUpHidden {
+    transform: translateY(0px);
+    opacity: 1;
 }

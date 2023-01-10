@@ -62,7 +62,7 @@ export default function SignInPage() {
                 </div>
                 <div className={cl.btnBlock}>
                     {btnActive?
-                        <Link href={'/'} onClick={e=>dispatch({type:'IS_AUTH_CHANGE', info: {value:true}})}>
+                        <Link href={'/calendar'} onClick={e=>dispatch({type:'IS_AUTH_CHANGE', info: {value:true}})}>
                             <MyBtnFilled>
                                 Sign In 
                             </MyBtnFilled>
@@ -77,10 +77,22 @@ export default function SignInPage() {
                 
                 
                 <div className={cl.signUpBlock}>
-                     Don't have an account yet? <Link href={'/signUp'}>Sign up</Link>
+                    <span className={cl.signUpVisible}>
+                        Do you want to become a system user? 
+                    </span>
+                    <span className={cl.signUpHidden}>
+                        Please contact us at 
+                        <Link href={'/sales-department'}>
+                            sales department 
+                        </Link>
+                    </span>
                 </div>
             </form>
       </div>
     </div>
   )
 }
+
+
+
+// http://ec2-18-192-54-75.eu-central-1.compute.amazonaws.com/swagger-ui/index.html#/Auth%20Api/registrationAdmin 

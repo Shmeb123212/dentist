@@ -1,0 +1,56 @@
+
+
+.header {
+    padding: 0 32px;
+    height: 64px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.leftBarsBlock {
+    cursor: pointer;
+}
+
+.content {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBlock {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+}
+
+.rightBlock {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    align-items: center;
+}
+
+.profileBlock {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+}
+
+.initialsBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    font-size: 14px;
+    line-height: 150%;
+    color: #9d9d9d;
+}
+
+.initials {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(107 114 128);
+}

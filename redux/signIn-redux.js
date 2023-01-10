@@ -14,6 +14,6 @@ export const signInReducer = (state = initialState, action) => {
     }
 }
 
-export const isAuthChange = (value)=>({
-    type: 'IS_AUTH_CHANGE', value
+export const isAuthChange = (info)=>({
+    type: 'IS_AUTH_CHANGE', info
 })

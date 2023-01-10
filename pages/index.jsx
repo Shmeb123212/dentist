@@ -5,7 +5,7 @@ export default function index() {
 
   const isAuth = useSelector(state=>state.signInAuth.isAuth)
   useEffect(()=>{
-    isAuth ? '' : window.location.href = `${window.location.href}signIn`
+    isAuth ? '' : window.location.href = `${window.location.href}sign-in`
     console.log(window.location.href)
   },[])
 
