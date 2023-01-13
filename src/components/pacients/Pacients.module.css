@@ -1,0 +1,38 @@
+
+
+
+.pacientsBlock {
+    padding: 40px 25px;
+}
+.pacientsListHead {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #cccccc78;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+
+}
+
+.pacientsItemHead {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+
+}
+
+.pacientsBodyList {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bodyRowList {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #cccccc78;
+}

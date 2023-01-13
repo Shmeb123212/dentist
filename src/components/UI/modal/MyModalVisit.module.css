@@ -1,0 +1,168 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+.modalBlock {
+    position:fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   
+    grid-template-rows: repeat(1, 600px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 15px ;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10000;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.modalMini {
+    display: -ms-grid;
+    display: grid;
+}
+
+.modalCard {
+    height: 100%;
+   
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+.closeModal {
+    position:absolute;
+    top: 30px;
+    right:30px;
+    cursor:pointer;
+}
+
+
+.modalContent {
+   
+    position: relative;
+    padding: 54px 77px 63px;
+    max-width: 560px;
+    margin: 35px auto;
+    background: #fff;
+    border-radius: 10px;
+    position: relative; pointer-events: all;
+    width: 100%;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    opacity: 0;
+    -webkit-transform:  translateX(20vw);
+        -ms-transform:  translateX(20vw);
+            transform:  translateX(20vw);
+    height: auto;
+    z-index: 100000;
+    overflow: auto;
+    pointer-events: none;
+}
+
+.modalBlock::-webkit-scrollbar {
+
+ display: none;
+}
+
+
+
+.modalBlock.active {
+pointer-events: all;
+   opacity: 1;
+}
+
+.modalBlock .activeContent {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    pointer-events: all;
+   
+}
+
+.modalForm {
+    min-height: 300px;
+}
+
+
+
+@media (max-height:603px) and (min-width: 576px){
+    .modalBlock {
+        display: -ms-grid;
+        display: grid;
+    }
+}
+
+@media (max-height:400px) and (max-width: 576px){
+    .modalBlock {
+        display: -ms-grid;
+        display: grid;
+        height: auto;
+        grid-template-rows: repeat(1,400px);
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+              
+    }
+}
+
+
+
+
+@media (max-width:992px) {
+    .modalContent {
+        max-width: 500px;
+        padding: 40px 45px;
+       
+    }
+
+
+}
+
+@media (max-width:576px) {
+
+    .modalBlock {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100%;
+    }
+
+    .modalContent {
+        max-width: 400px;
+        padding: 30px;
+    }
+
+
+  
+}

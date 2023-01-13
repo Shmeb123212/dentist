@@ -7,6 +7,21 @@ import Link from 'next/link';
 
 export default function Header({isHiddenSidebar}) {
     const dispatch = useDispatch();
+
+
+    function handlePrevMonth() {
+        // setMonthIndex(monthIndex - 1);
+      }
+      function handleNextMonth() {
+        // setMonthIndex(monthIndex + 1);
+      }
+      function handleReset() {
+        // setMonthIndex(
+        //   monthIndex === dayjs().month()
+        //     ? monthIndex + Math.random()
+        //     : dayjs().month()
+        // );
+      }
   return (
    <header className={cl.header}>
     <div className={cl.content}>

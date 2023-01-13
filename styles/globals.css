@@ -6,21 +6,21 @@
 
 
 * {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing:border-box ;
+    margin:0 ;
+    padding:0 ;
 }
 
 body {
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', serif ;
 }
 
 a {
-    color: #00B4D8;
-    text-decoration: none;
+    color: #00B4D8 ;
+    text-decoration: none ;
 }
 
 .disableBtn {
-    pointer-events:none;
-    opacity:.4;
+    pointer-events:none ;
+    opacity:.4 ;
 }

@@ -1,0 +1,54 @@
+
+
+.selectBlock {
+    width: 100%;
+    height: auto;
+}
+
+.selectHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    height: 40px;
+    outline: 1px solid #adb5bd8b;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+    transition: all .15s;
+}
+
+.selectBody {
+    width: 100%;
+    pointer-events: none;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:5px;
+    transform: translateY(-15px);
+    opacity: 0;
+    z-index: 15;
+}
+
+.activeHead {
+    outline: 1px solid #00B4D8;
+
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(15px);
+
+}
+
+.selectItem {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #707070;
+    transition: all .15s;
+    padding: 0 18px;
+    height: 30px;
+}
