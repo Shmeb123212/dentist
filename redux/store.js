@@ -5,10 +5,9 @@ import {SidebarReducer} from './sidebar-redux';
 import {hiddenSidebarReducer} from './hiddenSidebar-redux'
 import {calendarColorsReducer} from './calendarColors-redux'
 import {calendarEventsReducer} from './calendarEvents-redux'
-import {calendarUntilsReducer} from './calendarUntils-redux'
 import {pacientsReducer} from './pacients-redux';
 import {doctorsReducer} from './doctors-redux';
-
+import {clinicActiveReducer} from './activeClinic-redux'
 
 const makeStore = ()=> configureStore({
     reducer: {
@@ -17,10 +16,9 @@ const makeStore = ()=> configureStore({
         'hiddenSidebar': hiddenSidebarReducer,
         'calendarColors':calendarColorsReducer,
         'calendarEvents':calendarEventsReducer,
-        'calendarUntils':calendarUntilsReducer,
         'pacients': pacientsReducer,
         'doctors': doctorsReducer,
-
+        'activeClinic': clinicActiveReducer,
     }
 })
 

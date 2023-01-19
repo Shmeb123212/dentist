@@ -116,3 +116,14 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
+
+  .bottomBlock {
+    position: relative;
+    width: 150px;
+    height: 47px;
+  }
+
+  .bottonSetBtn {
+    color: #484848;
+  }

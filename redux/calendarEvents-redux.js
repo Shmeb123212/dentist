@@ -1,6 +1,6 @@
 
 const initialState = [
-    // {id:1, type:'', doctor:'',date:'', time:'',duration:'',pacient:'',status:''}
+   
 ]
 
 

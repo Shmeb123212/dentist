@@ -1,7 +1,7 @@
 const initialState = [
-    {id:1, firstName: 'Test1', midName:'Test',lastName:'Test', gender: 'M', bday:'05.10.2001',number:'+7 (500) 765-34-43', status:'-',from:'-'},
-    {id:2, firstName: 'Test2', midName:'Test',lastName:'Test', gender: 'M', bday:'12.24.2000',number:'+7 (643) 655-34-43', status:'-',from:'-'},
-    {id:3, firstName: 'Test3', midName:'Test',lastName:'Test', gender: 'M', bday:'06.12.1980',number:'+7 (123) 775-34-43', status:'-',from:'-'},
+    {id:1, firstName: 'Test1', midName:'Test',lastName:'Test', gender: 'M', bday:'05.10.2001',number:'+7 (500) 765-34-43', status:'-',from:'-', credit:'0.00$'},
+    {id:2, firstName: 'Test2', midName:'Test',lastName:'Test', gender: 'M', bday:'12.24.2000',number:'+7 (643) 655-34-43', status:'-',from:'-',credit:'0.00$'},
+    {id:3, firstName: 'Test3', midName:'Test',lastName:'Test', gender: 'M', bday:'06.12.1980',number:'+7 (123) 775-34-43', status:'-',from:'-',credit:'0.00$'},
 
 ]
 
@@ -14,7 +14,8 @@ export const pacientsReducer = (state = initialState, action) => {
         return [...state].filter(pac=>pac.id !== action.info.id)
        }
        case 'EDIT_NEW_PACIENT': {
-        return [...state].filter(pac=>pac.id === action.info.id ? {...pac, ...action.info.value} : pac)
+        console.log({...action.info.value})
+        return [...state].map(pac=>pac.id == action.info.id ? {...pac, credit: action.info.value} : pac)
        }
         default: 
             return state

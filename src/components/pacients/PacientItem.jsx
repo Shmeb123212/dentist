@@ -9,6 +9,7 @@ export default function PacientItem({pacient}) {
         console.log((Date.now()  - bdayDate), Date.now(), bdayDate)
         return ~~((Date.now()  - bdayDate)/(31557600000))
     }
+    console.log(pacient.credit)
 
   return (
     <li className={cl.bodyRow}>

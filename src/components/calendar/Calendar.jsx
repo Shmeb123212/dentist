@@ -6,6 +6,7 @@ import cl from './Calendar.module.css';
 export default function Calendar() {
 
     const eventsState = useSelector(state=>state.calendarEvents)
+    console.log(eventsState)
   return (
     <div>
         <CalendarComponent events={eventsState}/>
